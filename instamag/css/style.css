@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    position: fixed;
+    
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    background: #00000055;
+}
+/*left*/
+.header .left{
+    float: left;
+    margin-left: 10px;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.header .left .t1{
+    color: #ffffff;
+}
+.header .left .t2{
+    color: #dc143c;
+}
+/*right*/
+.header .right{
+    float: right;
+    font-weight: 800;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.navbar .text{
+    float: left;
+    margin-right: 20px;
+}
+.navbar .text li{
+    display: inline-block;
+    padding: 0 5px;
+}
+.navbar .text li a{
+    color: #ffffff;
+    padding-bottom: 18px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: all 0.5s ease;
+}
+.navbar .text li a:hover{
+    color: #dc143c;
+    font-size: 1.2em;
+    border-bottom: 2px solid #dc143c;
+    transition: all 0.5s ease;
+}
+.navbar .social{
+    float: right;
+}
+.navbar .social li{
+    display: inline-block;
+    margin-left: 5px;
+}
+.navbar .social li span{
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 8px;
+    border: 1px solid #dc143c00;
+    border-radius: 15px;
+    transition: all 1s ease;
+}
+.navbar .social li span:hover{
+    color: #dc143c;
+    border: 1px solid #dc143c;
+    transition: all 1s ease;
+}
+
+/*main*/
+.main{
+    padding: 0;
+    margin: 0;
+}
+/*summary*/
+.main .summary{
+    width: 100%;
+    height: 100vh;
+    /* background: #0a171f; */
+    background: linear-gradient(#000000aa,#00000000),url(../img/1.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.main .summary .space_header{
+    position: relative;
+    padding: 60px 0 0;
+}
+.main .summary .container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 60px;
+    height: 100%;
+}
+.main .summary .container .left,
+.main .summary .container .right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%; 
+}
+
+.main .summary .container .l1,
+.main .summary .container .l2,
+.main .summary .container .r1,
+.main .summary .container .r2{
+    display: flex;
+    width: 100%;
+    height: 50%;  
+    align-items: center;
+    justify-content: center;
+    transition: all 5s ease;
+}
+.main .summary .container .l1:hover,
+.main .summary .container .r1:hover{
+    background: linear-gradient(#0e7c9755,#00000000);
+    transition: all 5s ease;
+}
+.main .summary .container .l2:hover,
+.main .summary .container .r2:hover{
+    background: linear-gradient(#00000000,#d69b1c55);
+    transition: all 5s ease;
+}
+/*
+.main .summary .container span{
+    padding: 20px;
+    border: 1px solid #dc143c55;
+}
+*/
+.main .summary .container .t1{
+    padding: 15px 10px;
+    border-radius: 25px;
+    border: 2px solid #dc143c;
+}
+.main .summary .container .t2,
+.main .summary .container .t3,
+.main .summary .container .t4{
+    padding: 15px 40px;
+    border-radius: 25px;
+    border: 2px solid #dc143c;
+}
+
+
+.main .summary .container a{
+    font-size: 1.2em;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+
+.main .summary .container a:hover{
+    font-size: 1.2em;
+    background: #dc143c;
+    font-weight: 800;
+    transition: all 0.5s ease;
+}
+
+/*magazine*/
+.main .magazine{
+    width: 100%;
+    height: 100%;
+    background: #0a171f;
+    /*background: linear-gradient(#17a0d64b,#af11a22d),url(../img/3.jpg) repeat center;*/
+    background-size: 100%;
+}
+
+.main .magazine .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 60px;
+    height: 100%;
+    align-items: center;
+    
+}
+.main .magazine .news{
+    background: linear-gradient(#17a0d64b,#af11a22d),url(../img/crysis_3_2013_game-1600x900.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.main .magazine .fet{
+    background: linear-gradient(#17a0d64b,#af11a22d),url(../img/2.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.main .magazine .rev{
+    background: linear-gradient(#17a0d64b,#af11a22d),url(../img/3.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.main .magazine .prev{
+    background: linear-gradient(#17a0d64b,#af11a22d),url(../img/video_game_wallpapers_technobuzz_net_23.jpg) no-repeat center;
+    background-size: cover;
+}
+.main .magazine .container .title{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 60px;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 25px;
+    /*border: 2px dotted #dc143c;*/
+    text-decoration: underline #dc143c;
+    background: #0b90c42d;
+}
+
+.main .magazine .container .image{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main .magazine .container .image img{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+
+
+.foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 999;
+    /*background: #dc143c;*/
+    background: #dc143cab;
+}
+.foot .foot-left{
+    float: left;
+    padding: 5px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.foot .foot-right{
+    float: right;
+    padding: 5px;
+    margin-right: 10px;
+    color: #fff;
+}
+.foot .foot-right a{
+    color: #ffffff;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+.foot .foot-right a:hover{
+    background-color: #ffffff;
+    color: #dc143c;
+}
+
+
+
+@media only screen and (max-width: 545px ){
+    .header .right .text{
+        display: none;
+    }
+    .main .magazine .container .image{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .main .magazine .container .image .im{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        background: #dc143c8a;
+        border-radius: 10px;
+        padding: 25px 5px 10px;
+    }
+    .main .magazine .container .image img{
+        width: 300px;
+        height: 200px;
+    }
+    .foot{
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
